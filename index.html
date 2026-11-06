@@ -66,7 +66,7 @@ nav .btn{padding:9px 18px;font-size:14px}
 .hero h1{font-size:clamp(34px,4.4vw,52px);line-height:1.05;margin-top:10px}
 .hero p.sub{color:var(--text2);font-size:20px;line-height:1.45;margin-top:22px;max-width:520px}
 .hero .ctas{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
-.stack{position:relative;height:430px}
+.stack{position:relative;height:470px;width:100%;max-width:540px;margin-left:auto}
 .claim{position:absolute;width:min(430px,100%);padding:26px 28px}
 .claim .top{display:flex;justify-content:space-between;align-items:baseline}
 .claim .lbl{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text3)}
@@ -76,8 +76,8 @@ nav .btn{padding:9px 18px;font-size:14px}
 .claim .bill b{color:var(--ink);font-weight:600}
 .claim hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 .claim .q{font-style:italic;font-size:17px}
-.claim.back{top:8px;right:28px;opacity:.9;transform:scale(.94);transform-origin:top right}
-.claim.front{top:118px;right:0}
+.claim.back{top:0;right:0;transform:rotate(3deg) scale(.95);transform-origin:top right}
+.claim.front{top:120px;left:0;transform:rotate(-2deg);box-shadow:0 0 50px rgba(186,214,214,.4),0 24px 60px -24px rgba(19,32,31,.28)}
 .flag{margin-top:16px;border-radius:14px;padding:13px 16px;background:var(--pine-t)}
 .flag .t{font-weight:600;color:var(--pine);font-size:15px}
 .flag .d{color:var(--text2);font-size:14.5px;margin-top:2px}
@@ -141,7 +141,8 @@ nav .btn{padding:9px 18px;font-size:14px}
 .person img{width:88px;height:88px;border-radius:50%;flex:none}
 .person h3{font-size:22px}
 .person .role{color:var(--pine);font-size:14.5px;font-weight:500;margin-top:2px}
-.person p{color:var(--text2);font-size:15.5px;margin-top:10px}
+.person p{color:var(--text2);font-size:15.5px;margin-top:8px}
+.person{align-items:center}
 
 /* contact */
 .contact{background:url(assets/bg.jpg) center/cover no-repeat;text-align:center;padding:120px 0}
@@ -162,7 +163,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
   .stats,.pv{grid-template-columns:1fr 1fr}
   .how{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr}
-  .stack{height:400px;max-width:460px}
+  .stack{height:470px;max-width:540px;margin:0 auto}
 }
 @media (max-width:620px){
   section{padding:80px 0}
@@ -172,7 +173,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
   .stack{height:auto}
   .claim{padding:22px}
   .claim.back{display:none}
-  .claim.front{position:relative;top:0;width:100%}
+  .claim.front{position:relative;top:0;width:100%;transform:none}
   .claim .lbl{font-size:11px;letter-spacing:.06em}
   .claim .date{font-size:12px;white-space:nowrap}
   .person{flex-direction:column}
@@ -325,10 +326,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 <section class="team" id="team">
   <div class="wrap">
     <div class="eyebrow rise">Team</div>
-    <h2 class="rise">Built by two students at the University of San Diego.</h2>
+    <h2 class="rise">The people behind ClearClaim.</h2>
     <div class="tgrid">
-      <div class="card person rise"><img src="assets/alphonse.png" alt="Alphonse van den Daele"><div><h3>Alphonse van den Daele</h3><div class="role">Co-founder · USD, Philosophy</div><p>Grew up inside this problem: both his parents are psychologists, and his father still does his own insurance paperwork. Leads the team and the conversations with practice owners.</p></div></div>
-      <div class="card person rise"><img src="assets/maxim.png" alt="Maxim Golubev"><div><h3>Maxim Golubev</h3><div class="role">Co-founder · USD, International Business and Business Analytics</div><p>Builds the platform and the AI behind it, including the working demo above.</p></div></div>
+      <div class="card person rise"><img src="assets/alphonse.png" alt="Alphonse van den Daele"><div><h3>Alphonse van den Daele</h3><p>Grew up inside this problem: both his parents are psychologists, and his father still does his own insurance paperwork. Leads our work with practice owners.</p></div></div>
+      <div class="card person rise"><img src="assets/maxim.png" alt="Maxim Golubev"><div><h3>Maxim Golubev</h3><p>Builds the platform and the AI behind it, from reading a practice’s notes to drafting the fix, including the working demo above.</p></div></div>
     </div>
   </div>
 </section>
